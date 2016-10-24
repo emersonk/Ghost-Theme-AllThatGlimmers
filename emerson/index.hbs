@@ -1,0 +1,27 @@
+{{!< default}}
+<main class="index_main_emerson" role="main">
+  <div class="glimmers"><h1>All that glimmers...</h1></div>
+      {{#foreach posts}}
+        <article class="index_article_emerson" role="article" itemscope itemtype="http://schema.org/Article">
+          <header class="postheader_emerson">
+            <time class="date_emerson" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">  {{date format='dddd DD MMM'}}</time>
+            </br>
+              <p class="index_posttitle_emerson" itemprop="headline">
+                <a href="{{{url}}}" rel="bookmark">
+                  {{title}}
+                </a>
+              </p>
+            <div class="postcontent_emerson" itemprop="articleBody">
+              {{content characters="100"}}<span>...</span>
+            </div>
+          </header>
+        </article>
+        <hr>
+      {{/foreach}}
+
+      {{#if pagination}}
+        <div class="pagination_emerson">
+          {{{pagination}}}
+        </div>
+      {{/if}}
+</main>

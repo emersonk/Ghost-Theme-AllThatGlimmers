@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Styles }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/styles.css"}}" />
+
+    {{! Google font }}
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker|Rock+Salt|Roboto|Pacifico' rel='stylesheet' type='text/css'>
+
+
+    {{!-- Brand icon --}}
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{! Responsive Meta Tags }}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{ghost_head}}
+</head>
+
+
+{{!-- TODO add header and footer --}}
+<body class="{{body_class}}">
+    <div class="wrapper_emerson">
+        {{{body}}}
+    </div>
+    {{ghost_foot}}
+</body>
+</html>

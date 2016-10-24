@@ -1,0 +1,19 @@
+{{!< default}}
+<main class="main_emerson" role="main">
+    {{#post}}
+        <article class="post_article_emerson" role="article" itemscope itemtype="http://schema.org/Article">
+            <header class="postheader_emerson">
+                <time class="date_emerson" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM'}}</time>
+                <h1 class="post_posttitle_emerson" itemprop="headline">{{title}}</h1>
+            </header>
+            <div class="postcontent_emerson" itemprop="articleBody">
+                {{content}}
+            </div>
+        </article>
+    {{/post}}
+      {{#if pagination}}
+        <div class="pagination_emerson">
+          {{{pagination}}}
+        </div>
+      {{/if}}
+</main>

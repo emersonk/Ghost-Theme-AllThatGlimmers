@@ -1,0 +1,14 @@
+<div role='banner' class="header_emerson">
+    {{#if @blog.logo}}<a class="logo_emerson" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+  <h1 class="blogtitle_emerson">
+      <a title="{{@blog.title}}" href='{{@blog.url}}'>
+          {{{@blog.title}}}
+      </a>
+  </h1>
+
+    <p class="blogdescription_emerson">
+      <a title="{{@blog.title}}" href='{{@blog.url}}'>
+        {{@blog.description}}
+      </a>
+    </p>
+</div>
