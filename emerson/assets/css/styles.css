@@ -69,6 +69,7 @@ p > img {
   margin-top: 0px;
   margin-bottom: 0.2em;
   font-size: 9vw;
+  text-align: center;
   text-decoration: none;
   font-family: 'Permanent Marker', cursive;
 }
@@ -76,6 +77,13 @@ p > img {
 .postcontent_emerson {
   margin: 0 auto;
   width: 70%;
+}
+/*if small screen, width back to 90%*/
+@media only screen and (max-width: 425px) {
+  .postcontent_emerson {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .index_posttitle_emerson a:hover{
