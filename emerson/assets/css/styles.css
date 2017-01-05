@@ -73,6 +73,11 @@ p > img {
   font-family: 'Permanent Marker', cursive;
 }
 
+.postcontent_emerson {
+  margin: 0 auto;
+  width: 70%;
+}
+
 .index_posttitle_emerson a:hover{
   color:  #B9E5CC;
 }
